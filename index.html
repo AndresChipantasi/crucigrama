@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CRUCIGRAMA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background: url("img/fondo.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      #mensaje {
+        inline-size: 300px;
+      }
+      .col-md-12 {
+        padding: 1 0 0 38%;
+      }
+      .casilla {
+        inline-size: 50px;
+        block-size: 50px;
+        text-align: center;
+      }
+      .table1 {
+        inline-size: 1400px;
+        text-align: center;
+      }
+
+      #niveles{
+        margin: 500px;
+      }
+
+      @media (max-inline-size: 600px) {
+        .col-md-12 {
+          padding: 0 0 0 18%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-md-12">
+      <img src="img/titulo.png" style="margin-inline-start: 570px;"><br />
+
+      <table class="table1">
+
+        <div id="mensaje"></div>
+  
+        <h1 style="text-align: center;">Aprendamos mas sobre la Diabetes Tipo 1</h1><br />
+
+        <tr>
+          <td style="text-align: center;">
+            <br>
+            Juega los diferentes modos de juego de nuestro crucigrma online y descrube las palabras
+            que tienen mas relevancia dentro de este mundo
+            <br /> 
+            <br /> 
+            <br /> 
+            <br /> 
+            <br /> 
+        <a href="/niveles/facil.html"><img src="img/facil.jpg" onClick="verificar()" /></a>
+        <a href="/niveles/medio.html"><img src="img/medio.jpg" onClick="verificar()" style="margin-inline-start: 50px;" /></a>
+        <a href="/niveles/dificil.html"><img src="img/dificil.jpg" onClick="verificar()" style="margin-inline-start: 50px;" /></a>
+          </td> 
+        </tr>
+      </table>
+      
+    </div>
+  </body>
+</html>
