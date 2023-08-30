@@ -1,0 +1,32 @@
+body {
+    background: url("/img/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#mensaje {
+    inline-size: 300px;
+}
+.col-md-12 {
+    padding: 1 0 0 38%;
+}
+.casilla {
+    inline-size: 50px;
+    block-size: 50px;
+    text-align: center;
+}
+.table1 {
+    inline-size: 1400px;
+    text-align: center;
+}
+
+#niveles{
+    margin: 500px;
+}
+
+@media (max-inline-size: 600px) {
+    .col-md-12 {
+    padding: 0 0 0 18%;
+    }
+}
