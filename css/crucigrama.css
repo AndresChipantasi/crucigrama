@@ -1,3 +1,12 @@
+#titulo {
+    text-align: center;
+    font-family:fantasy;
+    letter-spacing: 5px;
+    margin: 10px;
+    border: solid;
+    border-color: black;
+    color: purple;
+}
     body {
         background: url("/img/fondo.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
