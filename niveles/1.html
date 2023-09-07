@@ -10,8 +10,12 @@
   
   <body>
     <div class="col-md-12">
-      <a href="/index.html"><img src="/img/regresar.jpg" alt="" style="border-radius: 50px;">
-      </a><br />
+      
+      <a href="/index.html">
+        <div class="arrow-container">
+          <div class="arrow"><h1 id="regresar">Regresar</h1></div>
+        </div>
+      </a>
         
         <h1 id="titulo">CRUCIGRAMA</h1>
 
@@ -22,55 +26,28 @@
           <td>
             <h2>- Veamos como te va con esto...</h2>
             <b>Horizontales</b><br />
-            -1. Término médico del nivel alto de azúcar en la sangre es…. <br />
-            -2. Extremidad superior del cuerpo donde se inyecta insulina….<br />
+            - 1. Instrumento de medida que se utiliza para vigilar y controlar el nivel 
+            de azúcar en la sangre...<br />
+            - 2. Órgano que produce insulina en el cuerpo...<br />
+            - 3. Hormona producida por el páncreas, que contribuye a regular los niveles 
+            de glucosa en sangre...<br />
+            - 4. Término médico que se utiliza para indicar la eliminación muy frecuente de orina...<br />
             <div id="mensaje"></div>
+            <div id="mensaje1"></div>
             <br />
             <b>Verticales</b><br />
-            - 1.Extremidad inferior del cuerpo donde se inyecta la insulina….<br />
-            - 2. Plato de hortalizas cortadas en trozos y aderezadas con sal, aceite, vinagre…<br />
+            - 1. Macronutriente que ayuda a las reservas de energía en el cuerpo o cubren los órganos...<br />
+            - 2. Azúcares, almidones y fibras que se encuentran en los alimentos y que te 
+            proporcionan energía en el cuerpo...<br />
+            - 3. Actividad física que realiza una persona o grupo de personas siguiendo 
+            ciertas reglas y dentro de un espacio físico determinado...<br />
             <br><br><br><br>
-            <img src="/img/boton.png" onClick="verificar()" style="margin: 0 0 0 13%;" />
+            <button onclick="verificar()">Revisar palabras</button>
+
           </td> 
           <td>
             <table class="table2">
-                <tr>
-                  <td>
-                </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                      <h3>1</h3>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                      <h3>2</h3>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila1C1" />
                 </td>
@@ -110,12 +87,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila1C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila1C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila1C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila2C1" />
                 </td>
@@ -155,12 +134,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila2C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila2C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila2C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila3C1" />
                 </td>
@@ -200,12 +181,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila3C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila3C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila3C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila4C1" />
                 </td>
@@ -245,13 +228,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila4C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila4C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila4C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                  <h3>1</h3>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila5C1" />
                 </td>
@@ -291,13 +275,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila5C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila5C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila5C15" />
+                </td>
               </tr>
-      
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila6C1" />
                 </td>
@@ -337,12 +322,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila6C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila6C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila6C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila7C1" />
                 </td>
@@ -382,13 +369,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila7C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila7C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila7C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                  <h3>2</h3>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila8C1" />
                 </td>
@@ -428,12 +416,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila8C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila8C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila8C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila9C1" />
                 </td>
@@ -473,12 +463,14 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila9C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila9C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila9C15" />
+                </td>
               </tr>
               <tr>
-                <td>
-                </td>
-                <td>
-                </td>
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila10C1" />
                 </td>
@@ -518,6 +510,247 @@
                 <td>
                   <input class="casilla" type="text" maxlength="1" id="fila10C13" />
                 </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila10C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila10C15" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C1" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C2" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C3" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C4" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C5" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C6" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C7" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C8" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C9" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C10" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C11" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C12" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C13" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila11C15" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C1" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C2" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C3" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C4" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C5" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C6" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C7" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C8" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C9" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C10" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C11" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C12" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C13" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila12C15" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C1" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C2" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C3" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C4" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C5" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C6" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C7" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C8" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C9" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C10" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C11" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C12" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C13" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila13C15" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C1" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C2" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C3" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C4" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C5" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C6" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C7" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C8" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C9" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C10" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C11" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C12" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C13" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila14C15" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C1" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C2" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C3" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C4" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C5" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C6" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C7" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C8" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C9" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C10" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C11" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C12" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C13" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C14" />
+                </td>
+                <td>
+                  <input class="casilla" type="text" maxlength="1" id="fila15C15" />
+                </td>
               </tr>
             </table>
 
@@ -527,7 +760,7 @@
       <tr>
       
     </tr>
-    <script src="/js/5.js"></script>
+    <script src="/js/1.js"></script>
     </div>
   </body>
 </html>

@@ -5,24 +5,34 @@
     margin: 10px;
     border: solid;
     border-color: black;
-    color: purple;
+    color: rgb(33, 97, 156);
 }
     body {
-        background: url("/img/fondo.jpg") no-repeat center center fixed;
+        background: url("/img/fondo1.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
-    #mensaje {
-        inline-size: 300px;
+
+    #mensaje1 {
+        inline-size: 350px;
+        color: rgb(0, 128, 0);
+        text-align: center;
     }
+
+    #mensaje {
+        inline-size: 350px;
+        color: rgb(128, 0, 0);
+        text-align: center;
+    }
+
     .col-md-12 {
         padding: 1 0 0 38%;
     }
     .casilla {
-        inline-size: 50px;
-        block-size: 50px;
+        inline-size: 35px;
+        block-size: 35px;
         text-align: center;
     }
     .table1 {
@@ -38,8 +48,64 @@
         padding: 0;
     }
 
+    button {
+        display: inline-block;
+        padding: 10px 100px;
+        font-size: 18px;
+        background: linear-gradient(135deg, #007bff, #002852);
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        font-family: cursive;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-block: 1px solid rgb(0, 0, 0);
+    }
+
     @media (max-inline-size: 600px) {
         .col-md-12 {
             padding: 0 0 0 18%;
         }
+    }
+    
+    .arrow-container {
+        position: relative;
+        inline-size: 1px;
+        block-size: 60px;
+    }
+    
+    .arrow {
+        position: absolute;
+        inline-size: 190px;
+        block-size: 60px;
+        background: linear-gradient(135deg, #007bffb6, #06427abe);
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transform: rotate(0deg);
+        margin-inline-start: 10px ;
+    }
+    
+    .arrow::before {
+        content: "";
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 15%;
+        inline-size: 0px;
+        block-size: 0px;
+        border-block-start: 15px solid transparent;
+        border-block-end: 15px solid transparent;
+        border-inline-end: 35px solid #ffffff; /* Cambia el color de fondo aquí */
+        background-color: linear-gradient(135deg, #007bff, #002752);
+        border-radius: 5%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    #regresar {
+        margin-block-start: 10px;
+        margin-inline-start: 50px;
+        color:rgb(2, 11, 88);
     }
